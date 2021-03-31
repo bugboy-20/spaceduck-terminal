@@ -29,32 +29,32 @@ The color scheme for [Alacritty](https://github.com/alacritty/alacritty) is in t
 
 ```YAML
 # Space Duck
-colors:
-  # Default colors
-  primary:
-    background: '#0f111b'
-    foreground: '#ecf0c1'
-  # Normal colors
-  normal:
-    black:   '#000000'
-    red:     '#e33400'
-    green:   '#5ccc96'
-    yellow:  '#b3a1e6'
-    blue:    '#00a3cc'
-    magenta: '#f2ce00'
-    cyan:    '#7a5ccc'
-    white:   '#686f9a'
-
-  # Bright colors
-  bright:
-    black:   '#686f9a'
-    red:     '#e33400'
-    green:   '#5ccc96'
-    yellow:  '#b3a1e6'
-    blue:    '#00a3cc'
-    magenta: '#f2ce00'
-    cyan:    '#7a5ccc'
-    white:   '#f0f1ce'
+ colors:
+    # Default colors
+    primary:
+      background: '#0f111b'
+      foreground: '#ecf0c1'
+    # Normal colors
+    normal:
+      black:   '#16172d'
+      red:     '#e33400'
+      green:   '#5ccc96'
+      yellow:  '#f2ce00'
+      blue:    '#b3a1e6'
+      magenta: '#ce6f8f'
+      cyan:    '#00a3cc'
+      white:   '#ecf0c1'
+ 
+    # Bright colors
+    bright:
+      black:   '#666666'
+      red:     '#d54e53'
+      green:   '#b9ca4a'
+      yellow:  '#e7c547'
+      blue:    '#7aa6da'
+      magenta: '#c397d8'
+      cyan:    '#70c0b1'
+      white:   '#eaeaea'
 ```
 
 ## Kitty
