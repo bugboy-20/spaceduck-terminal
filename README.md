@@ -6,14 +6,24 @@ A intergalactic space theme for your terminal! This is the spaceduck repo for te
   <img  src="./img/iTerm.png" alt="Terminal screenshot of iTerm2 terminal with neofetch program ran">
 </center>
 
+**Color Disclaimer:**
+
+I've personally swapped the yellow and purple colors in most terminal themes.
+This is a personal preference as I've found it to render the colorscheme how I like since Spaceduck is dark purple oriented. Feel free to change the colorscheme locally to be more semantically correct! I'm open to change the repo here if any bugs are found however.
+Take a look at [this thread](https://github.com/pineapplegiant/spaceduck-terminal/pull/2) to see the visual differences at this change.
+
 ## Currently Ported Terminals
 
 - [Iterm2](#iterm2)
 - [Terminal.app MacOS](#terminalapp-macos)
 - [Alacritty](#alacritty)
 - [Kitty](#kitty)
+- [st](#st)
 - [Windows Terminal](#windows-terminal)
 - [Tmux](#tmux)
+- [Konsole](#konsole)
+- [Termux](#termux)
+
 
 ## Iterm2
 
@@ -56,6 +66,8 @@ The color scheme for [Alacritty](https://github.com/alacritty/alacritty) is in t
       cyan:    '#70c0b1'
       white:   '#eaeaea'
 ```
+## st
+The color theme for [st](https://st.suckless.org/) is located in `spaceduck.h`, open `config.h` (usually in `~/.local/src/st`), search for `static const char *colorname`, delete that part of the configuration until `unsigned int defaultcs = 257;` replace that with the content of `spaceduck.h`, save the file and exit your editor, then run `sudo make install` where st is located to recompile it, close the terminal and launch the terminal again and _voila!_, you should have spaceduck up and running!
 
 ## Kitty
 
@@ -143,3 +155,13 @@ But if you're too lazy to click the link you can put this in your tmux.conf for 
   # When Commands are run
   set -g message-style "fg=#0f111b,bg=#686f9a"
 ```
+
+## Konsole
+
+Copy `spaceduck.colorscheme` to the `.local/share/konsole/`. After that run `konsoleprofile colors="spaceduck"` OR in Konsole's settings navigate to `Configure Konsole...` > `Profiles` > Select your active profile e.g. `Shell (Default)` > `Edit...` > `Appearence` > Find and select `SpaceDuck` in the `Color scheme & font` > Press `Apply`.
+
+## Termux
+
+Copy `spaceduck.properties` file to the `~/.termux/` and rename it to `colors.properties`. After that exit Termux's session and launch it again.
+Note: if you have Termux:Styling plugin installed - changing color scheme with it will overwrite `colors.properties` file with selected theme.
+
